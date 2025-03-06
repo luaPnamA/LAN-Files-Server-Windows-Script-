@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full-Screen Layout */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+/* Centered Content Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Titles */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+/* Upload Form */
+form {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #bbb;
+}
+
+form input[type="file"] {
+    background: #444;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Navigation Button */
+.nav-button {
+    display: block;
+    margin-top: 20px;
+    background-color: #f39c12;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.nav-button:hover {
+    background-color: #e67e22;
+}
+
+/* GRID FILE LIST */
+.files-section {
+    margin-top: 20px;
+}
+
+/* Grid Layout for Uploaded Files */
+.files-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.file-card {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.file-card:hover {
+    transform: scale(1.05);
+}
+
+.file-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.file-card a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    overflow-wrap: break-word;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.file-card a:hover {
+    color: #34d058;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
