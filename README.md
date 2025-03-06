@@ -3,6 +3,7 @@
 1️⃣ **Download & Install**:
 - [Download PHP](https://windows.php.net/download)
 - [Download Python](https://www.python.org/downloads)
+- [Download the "FILES.zip" folder]
 
 2️⃣ **Run the Setup Script**:
 Simply **double-click** `setup.bat` and enter your **local network IP**.
